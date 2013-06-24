@@ -82,14 +82,14 @@ class DigirankTest < Test::Unit::TestCase
 
     def test_repetition_probability_of_length_1_to_10
         (1..10).each do |index|
-            repetition_probabilitys = 0
+            repetition_probabilities = 0
             repetitions = DigiRank::generate_all_possible_repetitions(index)
 
             repetitions.each_with_index do |repetition, index|
-                repetition_probabilitys += DigiRank::repetition_probability(repetition)
+                repetition_probabilities += DigiRank::repetition_probability(repetition)
             end
 
-            assert_equal(1, repetition_probabilitys)
+            assert_equal(1, repetition_probabilities)
         end
     end
 
