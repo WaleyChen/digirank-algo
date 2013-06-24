@@ -1,7 +1,7 @@
 digirank-algo
 =============
 
-    Calculates the probability of the lengths of repetitions given any number e.g.
+Calculates the probability of the lengths of repetitions given any number e.g.
 
     For the numbers with length 6,
         6 repetitions of length 1 
