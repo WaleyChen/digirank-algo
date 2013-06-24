@@ -64,7 +64,7 @@ class DigirankTest < Test::Unit::TestCase
         ]
     }
 
-    def test_repetition_probabilitys
+    def test_repetition_probabilities
         REPETITION_PROBABILITY_PROVIDER.keys.each do |key|
             repetition_probabilities = 0
             expected_repetition_probability = REPETITION_PROBABILITY_PROVIDER[key]
@@ -80,8 +80,8 @@ class DigirankTest < Test::Unit::TestCase
         end
     end
 
-    def test_repetition_probability_of_length_6_to_10
-        (6..10).each do |index|
+    def test_repetition_probability_of_length_1_to_10
+        (1..10).each do |index|
             repetition_probabilitys = 0
             repetitions = DigiRank::generate_all_possible_repetitions(index)
 
